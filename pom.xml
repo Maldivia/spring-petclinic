@@ -17,7 +17,7 @@
   <properties>
 
     <!-- Generic properties -->
-    <java.version>1.8</java.version>
+    <java.version>11</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -102,12 +102,6 @@
       <version>${webjars-bootstrap.version}</version>
     </dependency>
     <!-- end of webjars -->
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <optional>true</optional>
-    </dependency>
   </dependencies>
 
   <build>
@@ -189,7 +183,7 @@
         </executions>
         <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
-          <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
+          <cssDestinationFolder>${project.build.directory}/classes/petclinic/staticx/resources/css</cssDestinationFolder>
           <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
           <contextFolder>${basedir}/src/main/less</contextFolder>
